@@ -13,127 +13,35 @@ body {
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-.blogpage-main-title {
-    color: #003661;
-    line-height: 1;
-    text-align: center;
-    margin-top: 30px;
-}
-.blogpage-main-desc {
-     margin: 10px auto 50px;
-    text-align: center;
-    font-size: 20px;
-}
-.blogpage-posts-wrapper {
+.grid-container {
     display: grid;
     grid-template: auto / minmax(0,1fr) minmax(0,1fr) minmax(0,1fr) minmax(0,1fr);
     grid-gap: 2em;
-}
-.blogpage-posts-wrapper .child-1 {
-    /* grid-column: 1 / -1; */
-    /* display: grid; */
-    /* grid-template: auto / 30% 70%; */
-    /* grid-gap: 10px; */
-    /* margin: 0 0 3em; */
-    grid-column: 1;
-    display: grid;
-}
-.blogpage-posts-wrapper .child-1 .bplogpage-posts-item-image {
-    width: 360px;
-    height: 360px;
-    border-radius: 15px;
-    box-shadow: 0 4.5px 3.6px rgba(0,0,0,.024), 0 12.5px 10px rgba(0,0,0,.035), 0 30.1px 24.1px rgba(0,0,0,.046), 0 100px 80px rgba(0,0,0,.07);
-    overflow: hidden;
-}
-.blogpage-posts-wrapper .child-1 .bplogpage-posts-item-image a {
-    display: block;
-    height: 100%;
-}
-.blogpage-posts-wrapper .child-1 .bplogpage-posts-item-image a img {
-    position: relative;
-    height: 100%;
-    object-fit: cover;
-}
-.blogpage-posts-wrapper .child-1 h2 {
-    font-size: 2em;
-    font-weight: 700;
-    word-spacing: -2px;
-    background: #fff;
-    box-shadow: 0 4.5px 3.6px rgba(0,0,0,.024), 0 12.5px 10px rgba(0,0,0,.035), 0 30.1px 24.1px rgba(0,0,0,.046), 0 100px 80px rgba(0,0,0,.07);
-    padding: 10px 20px;
-    border-radius: 15px;
-    width: max-content;
-    transform: translate3d(50px,0,0);
-    margin: 15px 0 0;
-}
-.blogpage-posts-wrapper .child-1 h2 a {
-    color: #003661;
-}
-.blogpage-posts-wrapper .child-1 .blogpage-posts-item-content-excerpt {
-    margin: 30px 15px 15px;
-    font-size: 1.1em;
-    line-height: 1.8;
-}
-.blogpage-posts-item-content {
-    display: flex;
-    flex-flow: column;
-}
-.blogpage-posts-item-content h2 {
-    order: 1;
-}
-.blogpage-posts-wrapper .blogpage-posts-item .read-more {
-    background: #003661;
-    color: #fff;
-    display: block;
-    margin: 10px 0 0;
-    padding: 10px;
-    border-radius: 10px;
-    font-size: .8em;
-    width: 150px;
+  }
+  
+  .box {
+    padding: 20px;
+    border: 1px solid black;
     text-align: center;
-}
-.blogpage-posts-item-content .read-more {
-    order: 3;
-}
-.blogpage-posts-item-content .blogpage-posts-item-content-excerpt {
-    order: 2;
-}
-.blogpage-posts-wrapper .child-4 {grid-column: 1 / 5;display: grid;}
-.blogpage-posts-wrapper .child-4 .blogpage-posts-item .blogpage-posts-item-content {
-    margin: -4em 1em 0;
-    z-index: 1;
-    position: relative;
-}
-.page-posts-wrapper .blogpage-posts-item h2 {
-    box-shadow: 0 4.5px 3.6px rgba(0,0,0,.024), 0 12.5px 10px rgba(0,0,0,.035), 0 30.1px 24.1px rgba(0,0,0,.046), 0 100px 80px rgba(0,0,0,.07);
-    background: #fff;
-    display: block;
-    font-size: 1.5em;
-    font-weight: 700;
-    z-index: 1;
-    position: relative;
-    padding: 10px 15px;
-    border-radius: 10px 0 10px 10px;
-}
-.blogpage-posts-wrapper .child-4 .blogpage-posts-item .blogpage-posts-item-content-excerpt {
-    margin: 2em 0 0;
-    line-height: 1.8;
-    position: relative;
-}
-.blogpage-posts-wrapper .child-4 .blogpage-posts-item .bplogpage-posts-item-image {
-    height: 200px;
+  }
+  
+  .grid-box-1 {
+    grid-column: span 1;
+  }
+  
+  .grid-box-2 {
+    /* grid-column: 1 / 4; */
+    grid-column: span 2;
+  }
+  .grid-box-3 {
+    /* grid-column: 1 / 4; */
+    grid-column: span 3;
+  }
+  .grid-box-4 {
+    /* grid-column: 1 / 4; */
+    grid-column: span 4;
+  }
+
+  .posts .box img {
     width: 100%;
-    overflow: hidden;
-    box-shadow: 0 4.5px 3.6px rgba(0,0,0,.024), 0 12.5px 10px rgba(0,0,0,.035), 0 30.1px 24.1px rgba(0,0,0,.046), 0 100px 80px rgba(0,0,0,.07);
-    border-radius: 15px;
-}
-.blogpage-posts-wrapper .child-4 .blogpage-posts-item .bplogpage-posts-item-image a {
-    display: block;
-    height: 100%;
-}
-.blogpage-posts-wrapper .child-4 .blogpage-posts-item .bplogpage-posts-item-image a img {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
+  }
